@@ -32,8 +32,6 @@ jobs:
 
       - name: Deploy to Main branch
         run: |
-          git config --global user.email "your-email@example.com"
-          git config --global user.name "your-username"
           git checkout main
           cp -R practice-react1/shopping-site-1/build/* .
           git add .
