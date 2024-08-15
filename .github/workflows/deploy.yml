@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-        cd ../
+        cd shopping-site-1
         npm install
 
       - name: Build the project
