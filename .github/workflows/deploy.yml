@@ -21,7 +21,9 @@ jobs:
           node-version: '16'  # 필요한 Node.js 버전을 설정하세요.
 
       - name: Install dependencies
-        run: npm install
+        run: |
+        cd ../
+        npm install
 
       - name: Build the project
         run: npm run build
