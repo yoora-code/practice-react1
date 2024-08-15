@@ -4,11 +4,10 @@ import { useEffect, useState } from 'react';
 import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import Main from './pages/main';
 
-
 function App() {
   return (
     <div>
-
+      <Main/>
     </div>
   );
 }
