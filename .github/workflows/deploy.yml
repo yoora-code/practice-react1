@@ -21,9 +21,7 @@ jobs:
           node-version: '16'  # 필요한 Node.js 버전을 설정하세요.
 
       - name: Install dependencies
-        run: |
-        cd practice-react1/
-        npm install
+        run: npm install
 
       - name: Build the project
         run: npm run build
