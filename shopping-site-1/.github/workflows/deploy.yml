@@ -33,7 +33,7 @@ jobs:
       - name: Deploy to Main branch
         run: |
           git checkout main
-          cp -R shopping-site-1/build/* .
+          cp -R build/* .
           git add .
           git commit -m "Deploy build files from develop"
           git push origin main
