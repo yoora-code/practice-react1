@@ -22,18 +22,18 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd practice-react1/shopping-site-1
+          cd shopping-site-1/
           npm install
 
       - name: Build the project
         run: |
-          cd practice-react1/shopping-site-1
+          cd shopping-site-1/
           npm run build
 
       - name: Deploy to Main branch
         run: |
           git checkout main
-          cp -R practice-react1/shopping-site-1/build/* .
+          cp -R shopping-site-1/build/* .
           git add .
           git commit -m "Deploy build files from develop"
           git push origin main
