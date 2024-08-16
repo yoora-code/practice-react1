@@ -7,7 +7,7 @@ import './css/style.scss';
 export default function App() {
   return (
     <div>
-      ektl tleh
+     뭐여
     </div>
   );
 }
