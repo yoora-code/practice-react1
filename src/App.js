@@ -7,7 +7,7 @@ import './css/style.scss';
 export default function App() {
   return (
     <div>
-     뭐여
+     다시다시다싣사디사디
     </div>
   );
 }
