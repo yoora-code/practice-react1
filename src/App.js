@@ -7,7 +7,7 @@ import './css/style.scss';
 export default function App() {
   return (
     <div>
-      왜 안돼냐
+      ektl tleh
     </div>
   );
 }
