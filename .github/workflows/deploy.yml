@@ -30,16 +30,9 @@ jobs:
         run: |
           git config --global user.email "yooralog@gmail.com"
           git config --global user.name "yoora"
-          # Switch to main branch
           git checkout -B main
-          
-        # Remove all files except for the build directory
           find . -maxdepth 1 ! -name 'build' ! -name '.git' ! -name '.' -exec rm -rf {} +
-          
-          # Move build files to root (optional)
           mv build/* . && rm -rf build
-          
-          # Commit and push only build files
           git add .
           git commit -m "Deploy to main branch"
           git push origin main --force
